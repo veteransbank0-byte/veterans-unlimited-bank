@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VUB – Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+  <div class="login-wrapper">
+
+    <div class="login-card">
+      <h1 class="bank-title">Veterans Ultimate Bank</h1>
+      <p class="subtitle">Secure Login</p>
+
+      <div class="input-group">
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Enter username">
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+      </div>
+
+      <button class="login-btn" onclick="login()">Sign In</button>
+
+      <div class="links">
+        <a href="#">Forgot username?</a>
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value.trim();
+      const pass = document.getElementById("password").value.trim();
+
+      const validUser = "EricTodd@$";
+      const validPass = "EricTodd@1$";
+
+      if (user === validUser && pass === validPass) {
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Invalid username or password");
+      }
+    }
+  </script>
+
+</body>
+</html>
