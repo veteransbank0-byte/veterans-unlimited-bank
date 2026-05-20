@@ -1,0 +1,108 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body {
+  background: #0a0f1a;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WRAPPER */
+.index-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* CARD */
+.index-card {
+  width: 100%;
+  max-width: 380px;
+  background: rgba(15, 20, 30, 0.75);
+  padding: 32px;
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f3f4f6;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+}
+
+/* TITLES */
+.bank-title {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+
+/* INPUT GROUP */
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #2d3748;
+  background: #111827;
+  color: #f3f4f6;
+  font-size: 15px;
+}
+
+/* BUTTON */
+.index-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #3a6ff8, #60a5fa);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+}
+
+.index-btn:hover {
+  opacity: 0.95;
+}
+
+/* LINKS */
+.links {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  color: #60a5fa;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
