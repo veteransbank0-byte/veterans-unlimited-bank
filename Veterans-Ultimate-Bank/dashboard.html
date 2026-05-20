@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUB - Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <!-- TOP GLASS NAVBAR -->
+    <header class="topbar">
+        <div class="logo">VUB</div>
+        <div class="page-title">Dashboard</div>
+
+        <div class="profile-area">
+            <span class="notif">🔔</span>
+            <img src="images/eric-profile.png" class="profile-pic" alt="Profile">
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <a href="dashboard.html" class="sidebar-section active">Dashboard</a>
+        <a href="accounts.html" class="sidebar-section">Accounts</a>
+        <a href="cards.html" class="sidebar-section">Cards</a>
+        <a href="payments.html" class="sidebar-section">Payments</a>
+        <a href="transfers.html" class="sidebar-section">Transfers</a>
+        <a href="spending.html" class="sidebar-section">Spending Insights</a>
+        <a href="subscriptions.html" class="sidebar-section">Subscriptions</a>
+        <a href="rewards.html" class="sidebar-section">Rewards</a>
+        <a href="vault.html" class="sidebar-section">Document Vault</a>
+        <a href="settings.html" class="sidebar-section">Settings</a>
+        <a href="profile.html" class="sidebar-section">Profile</a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+        <!-- WELCOME BANNER -->
+        <div class="welcome-banner glass-card">
+            <h2 id="welcomeText">Welcome, Eric Todd</h2>
+            <p>Your financial overview at a glance</p>
+        </div>
+
+        <!-- ONE COMBINED BALANCE CARD -->
+        <section class="glass-card combined-balance-card">
+            <h3>Account Balances</h3>
+
+            <div class="balance-row">
+                <span class="label">Current Balance</span>
+                <span class="balance">$629,733,289.52</span>
+            </div>
+
+            <div class="balance-row">
+                <span class="label">Available Balance</span>
+                <span class="balance">$567,529,624.699</span>
+            </div>
+
+            <div class="balance-row">
+                <span class="label">Savings Balance</span>
+                <span class="balance">$3,497,362,919.07</span>
+            </div>
+        </section>
+
+        <!-- RECENT TRANSACTIONS -->
+        <section class="glass-card transactions-card">
+            <h3>Recent Transactions</h3>
+
+            <div class="transaction">
+                <span>Amazon Purchase</span>
+                <span class="amount negative">‑$82.99</span>
+            </div>
+
+            <div class="transaction">
+                <span>Direct Deposit</span>
+                <span class="amount positive">+$1,200.00</span>
+            </div>
+
+            <div class="transaction">
+                <span>Starbucks</span>
+                <span class="amount negative">‑$6.75</span>
+            </div>
+
+            <div class="transaction">
+                <span>Electric Bill</span>
+                <span class="amount negative">‑$120.50</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- DYNAMIC NAME SCRIPT -->
+    <script>
+        const name = localStorage.getItem("profileName") || "Eric Todd";
+        document.getElementById("welcomeText").textContent = "Welcome, " + name;
+    </script>
+
+</body>
+</html>
